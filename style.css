@@ -1,0 +1,161 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  background-image: url(https://statics.indozone.news/local/641986c609dfb.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 6rem;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+/* Pendidikan section styles */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#pendidikan p {
+  color: #333;
+}
+
+#pendidikan ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#pendidikan li {
+  width: 250px;
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+#pendidikan h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Pendidikan Style */
+
+@keyframes muncul-dari-kanan {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* About Style */
+
+#about p {
+  color: #333;
+}
+
+/* Atur properti animasi untuk elemen */
+#pendidikan {
+  animation: muncul-dari-kanan 3s ease-out;
+}
+
+#projects {
+  background-color: #007461;
+  text-align: center;
+}
+
+#projects h2 {
+  color: white;
+}
+
+#projects ul {
+  list-style: none;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+#projects p {
+  color: #333;
+}
+
+.media-container {
+  position: relative;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.media-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.media-container:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.overlay a {
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 70px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.overlay a:hover {
+  background-color: #fff;
+}
+
+.overlay i {
+  font-size: 36px;
+  color: #333;
+}
+
+.media-container:hover .overlay {
+  opacity: 1;
+}
+
+/* Contact Style */
